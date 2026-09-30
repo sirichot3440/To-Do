@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npx wrangler pages deploy dist --project-name=todo"
   },
   "dependencies": {
     "lucide-react": "^0.460.0",
