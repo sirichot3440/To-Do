@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background: #f4f5f7;
+  color: #1f2937;
+}
+
+/* Smooth delete animation */
+.row {
+  transition: opacity 0.25s ease, transform 0.25s ease, max-height 0.25s ease, margin 0.25s ease;
+  max-height: 120px;
+}
+.row.removing {
+  opacity: 0;
+  transform: translateX(24px);
+  max-height: 0;
+  margin: 0;
+  overflow: hidden;
+}
